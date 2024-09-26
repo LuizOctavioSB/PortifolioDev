@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - LuizOctavioSB</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-conteudo">
+            <div class="texto-sobre">
+                <p>Eu sou o <strong>Luiz Octávio</strong>, estudante de <strong>Sistemas de Informação</strong>. Estou em busca da minha primeira oportunidade profissional na área de <strong>Desenvolvimento Web</strong>, onde posso aplicar e expandir meus conhecimentos.</p>
+                <p>Tenho me dedicado a aprender e aprimorar habilidades em:</p>
+                <ul class="habilidades">
+                    <li><i class="fab fa-html5"></i> <strong>HTML5</strong></li>
+                    <li><i class="fab fa-css3-alt"></i> <strong>CSS3</strong></li>
+                    <li><i class="fab fa-js-square"></i> <strong>JavaScript</strong></li>
+                    <li><i class="fab fa-php"></i> <strong>PHP</strong></li>
+                    <li><i class="fab fa-react"></i> Atualmente, aprofundando meus estudos em&nbsp;<strong>React</strong></li>
+                    <li><i class="fas fa-database"></i> Banco de Dados&nbsp;<strong>PostgreSQL</strong></li>
+                </ul>
+                <p>Aqui você encontrará alguns dos projetos que desenvolvi ao longo da minha formação. Fique à vontade para explorar e, se tiver alguma pergunta ou oportunidade, entre em contato. Será um prazer conversar com você!</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <div class="projeto">
+            <h3>Nome do Projeto</h3>
+            <p>Descrição breve do projeto e tecnologias usadas.</p>
+            <a href="https://github.com/seu-usuario/projeto">Ver no GitHub</a>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="form.php" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" oninput="autoResize(this)" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>    
+
+    <footer>
+        <p>&copy; 2024 Luiz Octávio Sacchetin de Bortoli</p>
+        <div class="social-links">
+            <a href="https://github.com/LuizOctavioSB" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/luizoctaviosb/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <!-- <a href="https://www.instagram.com/luizsacchetin/" target="_blank"><i class="fab fa-instagram"></i></a> -->
+        </div>
+    </footer>    
+    
+    <script src="JS/script.js"></script>
+</body>
+</html>
