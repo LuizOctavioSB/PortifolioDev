@@ -61,7 +61,6 @@ nav ul li a:hover {
 /* Seção Sobre Mim */
 #sobre {
     padding: 60px 20px;
-    background-color: rgba(255, 255, 255, 0.1);
     text-align: center;
 }
 
@@ -108,7 +107,6 @@ nav ul li a:hover {
 /* Seção Projetos */
 #projetos {
     padding: 60px 20px;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .projeto {
