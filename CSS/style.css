@@ -3,13 +3,19 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    color: #f0f0f0;
     background: linear-gradient(to bottom, #2f2f2f, #000000);
+    color: #f0f0f0;
+}
+
+/* Wrapper centralizado */
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px; /* Adiciona um espaçamento nas laterais para telas menores */
 }
 
 /* Títulos e Parágrafos */
 h2, h3 {
-    margin: 0;
     font-weight: 700;
     color: #ffffff;
 }
@@ -38,12 +44,10 @@ ul {
 
 /* Cabeçalho */
 header {
-    background-color: transparent;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Navegação */
 nav ul li {
     display: inline-block;
     margin: 0 15px;
@@ -60,17 +64,11 @@ nav ul li a:hover {
 
 /* Seção Sobre Mim */
 #sobre {
-    padding: 60px 20px;
-    text-align: center;
+    padding: 60px 0 0;
+    text-align: justify;
 }
 
 .sobre-conteudo {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.texto-sobre {
-    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -95,18 +93,10 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.habilidades li i.fa-php {
-    font-size: 25px;
-}
-
-.habilidades li strong {
-    font-weight: 700;
-    font-size: 1.1em;
-}
-
 /* Seção Projetos */
 #projetos {
-    padding: 60px 20px;
+    padding: 60px 0;
+    text-align: left;
 }
 
 .projeto {
@@ -114,8 +104,6 @@ nav ul li a:hover {
     border-radius: 5px;
     padding: 20px;
     margin-bottom: 30px;
-    max-width: 800px;
-    margin: 0 auto 30px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -170,7 +158,8 @@ footer .social-links .contact-button {
     text-decoration: none;
 }
 
-footer .social-links .contact-button:hover {
+footer .social-links {
+    margin-top: 15px;
     color: #1e90ff;
 }
 
@@ -178,20 +167,13 @@ footer .social-links .contact-button i {
     margin-right: 8px;
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-    .sobre-conteudo {
-        display: flex;
-        flex-direction: row;
-        text-align: left;
-        align-items: center;
-    }
+footer .email-contact {
+    color: #dcdcdc;
+}
 
-    .texto-sobre {
-        margin-left: 20px;
-    }
-
-    .habilidades li {
-        justify-content: flex-start;
+/* Responsividade para telas menores */
+@media (max-width: 700px) {
+    .wrapper {
+        padding: 0 15px;
     }
 }
