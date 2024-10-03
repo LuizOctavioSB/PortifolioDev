@@ -11,7 +11,7 @@ body {
 .wrapper {
     max-width: 700px;
     margin: 0 auto;
-    padding: 0 20px; /* Adiciona um espaçamento nas laterais para telas menores */
+    padding: 0 20px;
 }
 
 /* Títulos e Parágrafos */
@@ -40,11 +40,21 @@ a:hover {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 /* Cabeçalho */
 header {
+    background-color: #1e1e1e;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 700px;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -56,6 +66,10 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
@@ -65,7 +79,7 @@ nav ul li a:hover {
 /* Seção Sobre Mim */
 #sobre {
     padding: 60px 0 0;
-    text-align: justify;
+    text-align: left;
 }
 
 .sobre-conteudo {
@@ -91,6 +105,10 @@ nav ul li a:hover {
     color: #1e90ff;
     width: 30px;
     text-align: center;
+}
+
+.habilidades li i.fa-php {
+    font-size: 25px;
 }
 
 /* Seção Projetos */
@@ -127,6 +145,7 @@ nav ul li a:hover {
 
 /* Rodapé */
 footer {
+    font-size: 17px;
     text-align: center;
     padding: 15px;
     background-color: transparent;
@@ -134,37 +153,19 @@ footer {
 }
 
 footer .social-links {
-    margin-top: 10px;
+    margin-top: 15px;
+    color: #1e90ff;
 }
 
 footer .social-links a {
     margin: 0 15px;
     color: #dcdcdc;
-    font-size: 30px;
+    font-size: 35px;
     transition: color 0.3s;
 }
 
 footer .social-links a:hover {
     color: #1e90ff;
-}
-
-/* Estilo para o botão de contato no footer */
-footer .social-links .contact-button {
-    display: inline-block;
-    margin: 0 15px;
-    color: #dcdcdc;
-    font-size: 30px;
-    transition: color 0.3s;
-    text-decoration: none;
-}
-
-footer .social-links {
-    margin-top: 15px;
-    color: #1e90ff;
-}
-
-footer .social-links .contact-button i {
-    margin-right: 8px;
 }
 
 footer .email-contact {
@@ -175,5 +176,9 @@ footer .email-contact {
 @media (max-width: 700px) {
     .wrapper {
         padding: 0 15px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 }
